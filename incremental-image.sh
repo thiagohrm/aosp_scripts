@@ -2,7 +2,7 @@
 productName=$1
 flavour=$2
 previous_target_file_path=$3
-aosp_path=""
+aosp_path="${WORKSPACE}/aosp"
 
 incremental_build() {
     echo "**********************Initiating Incremental Build**********************"
