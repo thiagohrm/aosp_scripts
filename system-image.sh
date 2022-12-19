@@ -12,7 +12,7 @@ environment_Setup() {
 #System Image build (Step 2)
 system_image() {
     echo "**********************Initiating System Image Build **********************"
-    make dist DIST_DIR=dist_output -j16
+    make dist DIST_DIR=dist_output -j1
     TARGET_FILE=dist_output/${productName}-target_files.zip
     echo $TARGET_FILE
     if [ ! -f "$TARGET_FILE" ]; then
