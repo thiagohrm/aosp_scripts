@@ -1,7 +1,6 @@
 !/bin/bash -el
 productName=$1
 flavour=$2
-aosp_path=""
 
 # Setup environment (Step 1)
 environment_Setup() {
@@ -33,7 +32,7 @@ post_build_setup() {
 }
 
 #Execution Sequence
-cd ${aosp_path}
+cd ${WORKSPACE}/aosp
 environment_Setup
 system_image
 post_build_setup
