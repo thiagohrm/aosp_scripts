@@ -1,7 +1,7 @@
 #!/bin/bash -el
 productName=$1
 flavour=$2
-aosp_path="#{WORKSPACE}/aosp"
+aosp_path="${WORKSPACE}/aosp"
 
 OTA_build() { # Needs previous system image to be present.
     echo "**********************Initiating OTA Build**********************"
