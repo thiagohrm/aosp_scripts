@@ -2,7 +2,6 @@
 productName=$1
 flavour=$2
 previous_target_file_path=$3
-aosp_path="${WORKSPACE}/aosp"
 
 incremental_build() {
     echo "**********************Initiating Incremental Build**********************"
@@ -11,5 +10,5 @@ incremental_build() {
      dist_output/${productName}-target_files-${flavour}.zip  dist_output/incremental_ota_${flavour}.zip
 }
 
-cd ${aosp_path}
+cd ${WORKSPACE}/aosp
 incremental_build
