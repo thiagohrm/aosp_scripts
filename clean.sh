@@ -1,5 +1,4 @@
 #!/bin/bash -el
-aosp_path="{$WORKSPACE}"
-cd aosp
+cd ${WORKSPACE}/aosp
 source build/envsetup.sh    # setup environment for make clobber
 make clobber
